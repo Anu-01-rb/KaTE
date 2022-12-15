@@ -6,4 +6,12 @@ setup(
     description='The AI and DS Tools',
     author='Anurak',
     license='MIT',
+    install_requires=[
+        "numpy",
+        "opencv-python",
+        "pythainlp",
+        "wordcloud",
+        "matplotlib.pyplot",
+        'pickle',
+    ],
 )
