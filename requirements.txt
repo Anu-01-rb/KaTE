@@ -1,0 +1,6 @@
+numpy
+opencv-python
+pythainlp
+wordcloud
+matplotlib.pyplot
+pickle
