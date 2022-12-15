@@ -11,6 +11,6 @@ setup(
         "opencv-python",
         "pythainlp",
         "wordcloud",
-        "matplotlib.pyplot", 
+        "matplotlib", 
     ],
 )
