@@ -11,7 +11,6 @@ setup(
         "opencv-python",
         "pythainlp",
         "wordcloud",
-        "matplotlib.pyplot",
-        'pickle',
+        "matplotlib.pyplot", 
     ],
 )
