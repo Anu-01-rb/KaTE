@@ -16,8 +16,8 @@ def text_process(text):
     return final
 
 def ev_text_recognizer(text):
-    lr = pickle.load(open("KaTE/KaTE/NLP/TextClassification/evrec/model/evrecog.model", 'rb'))
-    cvec = pickle.load(open("KaTE/KaTE/NLP/TextClassification/evrec/model/evrecog.vector", 'rb'))
+    lr = pickle.load(open("NLP/TextClassification/evrec/model/evrecog.model", 'rb'))
+    cvec = pickle.load(open("NLP/TextClassification/evrec/model/evrecog.vector", 'rb'))
     tokens = text_process(text)
     bow = cvec.transform(pd.Series([tokens]))
     predictions = lr.predict(bow)

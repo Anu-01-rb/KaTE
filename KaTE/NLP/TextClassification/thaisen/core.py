@@ -16,8 +16,8 @@ def text_process(text):
     return final
 
 def get_sentiment(text):
-    lr = pickle.load(open("KaTE/NLP/TextClassification/thaisen/model/thaisen.model", 'rb'))
-    cvec = pickle.load(open("KaTE/NLP/TextClassification/thaisen/model/vector.vec", 'rb'))
+    lr = pickle.load(open("NLP/TextClassification/thaisen/model/thaisen.model", 'rb'))
+    cvec = pickle.load(open("NLP/TextClassification/thaisen/model/vector.vec", 'rb'))
     tokens = text_process(text)
     bow = cvec.transform(pd.Series([tokens]))
     predictions = lr.predict(bow)
