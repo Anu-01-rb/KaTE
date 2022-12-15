@@ -2,4 +2,4 @@ __all__ = [
     "TextClassification",
 ]
 
-from NLP.TextClassification.evrec import TextClassification
+from KaTE.NLP import TextClassification
